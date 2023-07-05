@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "tailwindcss -i ./src/global.css -o ./dist/global.css --watch",
     "build": "mkdir dist && copy src\\index.html dist\\index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
-    "build-linux": "mkdir dist && cp src\\index.html dist\\index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
+    "build-linux": "mkdir dist && cp src/index.html dist/index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
     "build-w": "npx tailwindcss -i ./src/global.css -o ./dist/global.css --watch"
   },
   "devDependencies": {
