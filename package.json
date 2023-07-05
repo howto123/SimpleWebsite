@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tailwindcss -i ./src/global.css -o ./dist/global.css --watch",
-    "build": "npx tailwindcss -i ./src/global.css -o ./dist/global.css",
+    "build": "mkdir dist && copy src\\index.html dist\\index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
     "build-w": "npx tailwindcss -i ./src/global.css -o ./dist/global.css --watch"
   },
   "devDependencies": {
