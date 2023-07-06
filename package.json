@@ -5,8 +5,8 @@
   },
   "scripts": {
     "clean": "rd /s /q dist > nul || exit 0",
-    "dev": "tailwindcss -i ./src/global.css -o ./dist/global.css --watch",
-    "build": "npm run clean && mkdir dist && copy /Y src\\index.html dist\\index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
+    "tailwind": "tailwindcss -i ./src/global.css -o ./dist/global.css --watch",
+    "build": "npm run clean && mkdir dist && npx tailwindcss -i ./src/global.css -o ./dist/global.css && copy /Y src\\index.html dist\\index.html",
     "build-linux": "mkdir dist && cp src/index.html dist/index.html && npx tailwindcss -i ./src/global.css -o ./dist/global.css",
     "watch": "npm run build && npm-watch"
   },
