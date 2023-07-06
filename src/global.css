@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: firebrick;
+    grid-gap:1rem;
+}
+.standard-box{
+    background-color: red;
+    border-radius: 5px;
+    border-color: black;
+    text-align: center;
+    padding: 2rem;
+}
