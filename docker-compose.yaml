@@ -1,0 +1,8 @@
+name: customname
+services:
+  webserver:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
